@@ -1,0 +1,23 @@
+name: Command
+version: '1.1'
+main: me.cmd.command.Command
+api-version: 1.15
+authors: [ YYDS_QAQ ]
+description: 一个可以自定义指令的插件
+
+softdepend: [PlaceholderAPI] # This is used, if your plugin works without PlaceholderAPI.
+
+commands:
+  cmd:
+    description: 插件主指令
+    permission: c.cmd
+    permission-message: 你没有权限！
+
+permissions:
+  c.cmd.cmd:
+    description: 插件主指令备用权限
+    default: true
+
+  c.reload.cmd:
+    default: 重载插件
+    description: op
